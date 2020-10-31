@@ -1,6 +1,9 @@
 # ArtSpace
 ArtSpace is an immersive app where users can browse art posted by other users and even preview on their walls. Independent artists can post their art and share it with the world. Users can view art and use an innovative augmented-reality feature to see how it would look in their home.
 
+### Project Status
+Not Active
+
 ## User Stories
 - Artiste: Independent artists can have trouble getting their work in front of potential appreciators. An artiste using ArtSpace can post images of their art to a central app where users have a chance to discover them and become fans.
 
@@ -17,8 +20,4 @@ ArtSpace is an immersive app where users can browse art posted by other users an
 - Firebase
 
 ## Screenshots
-
 ![](images/ArtSpaceMainDetailScreen.gif)![](images/ArtSpaceFavs.gif)
-
-## Project Status
-Not Active
