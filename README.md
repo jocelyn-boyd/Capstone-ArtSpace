@@ -17,7 +17,7 @@ Users can view browse and view uploaded works by other users, and use an innovat
 - Firebase for the back-end
 
 ## Screenshots
-![Main-Screen](images/ArtSpaceMainDetailScreen.gif) ![Favorites-Screen](images/ArtSpaceFavs.gif) ![AR](images/IMG_0007.PNG)
+![Main-Screen](images/ArtSpaceMainDetailScreen.gif) ![Favorites-Screen](images/ArtSpaceFavs.gif)
 
 ## Project Status
 Not Active 
