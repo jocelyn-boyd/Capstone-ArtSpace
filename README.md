@@ -18,9 +18,7 @@ ArtSpace is an immersive app where users can browse art posted by other users an
 
 ## Screenshots
 
-![](images/ArtSpaceMainDetailScreen.gif)
-
-![](images/ArtSpaceFavs.gif)
+![](images/ArtSpaceMainDetailScreen.gif)![](images/ArtSpaceFavs.gif)
 
 ## Project Status
-Active
+Not Active
