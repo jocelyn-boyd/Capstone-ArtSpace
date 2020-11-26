@@ -178,7 +178,7 @@ class LoginViewController: UIViewController {
                         return
                 }
                 UIView.transition(with: self.view, duration: 0.1, options: .transitionFlipFromBottom, animations: {
-                  let mainViewController = MainTabBarController()
+                  let mainViewController = ASTabBarController()
                     mainViewController.modalPresentationStyle = .overCurrentContext
                     sceneDelegate.window?.rootViewController = mainViewController
                 }, completion: nil)
@@ -222,7 +222,7 @@ class LoginViewController: UIViewController {
     private func handleCreatedUserInFirestore(result: Result<Void, Error>) {
         switch result {
         case .success:
-            let tabBarController = MainTabBarController()
+            let tabBarController = ASTabBarController()
             tabBarController.modalPresentationStyle = .overCurrentContext
             self.present(tabBarController, animated: true, completion: nil)
         case .failure(let error):

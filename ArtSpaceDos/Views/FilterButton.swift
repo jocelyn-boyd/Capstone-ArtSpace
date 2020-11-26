@@ -14,6 +14,7 @@ enum SystemImageNames: String {
     case pencil = "pencil.and.outline"
     case newMedia = "faceid"
 }
+
 class TagButton: UIButton {
     var selectedBackgroundColor = ArtSpaceConstants.artSpaceBlue
     var selectedImage = UIImage(systemName: "checkmark")
