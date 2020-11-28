@@ -25,7 +25,7 @@ class SavedArtViewController: UIViewController {
     layout.sectionInset = UIEdgeInsets(top: 15, left: 0, bottom: 0, right: 0)
     
     let collection = UICollectionView(frame: CGRect(x: 0, y: 0, width: 200, height: 200), collectionViewLayout: layout)
-    collection.register(SavedArtCollectionViewCell.self, forCellWithReuseIdentifier: ReuseIdentifier.savedArtCell.rawValue)
+    collection.register(SavedArtCollectionViewCell.self, forCellWithReuseIdentifier: SavedArtCollectionViewCell.reuseIdentifier)
     collection.backgroundColor = .clear
     collection.dataSource = self
     collection.delegate = self
@@ -125,7 +125,7 @@ extension SavedArtViewController: UICollectionViewDataSource {
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    guard let cell = savedArtCollectionView.dequeueReusableCell(withReuseIdentifier: ReuseIdentifier.savedArtCell.rawValue, for: indexPath) as? SavedArtCollectionViewCell else {return UICollectionViewCell()}
+    guard let cell = savedArtCollectionView.dequeueReusableCell(withReuseIdentifier: SavedArtCollectionViewCell.reuseIdentifier, for: indexPath) as? SavedArtCollectionViewCell else {return UICollectionViewCell()}
     
     let savedArtObjects = artObjectData[indexPath.row]
     let url = URL(string: savedArtObjects.artImageURL)

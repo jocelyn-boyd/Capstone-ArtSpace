@@ -10,6 +10,8 @@ import UIKit
 import SnapKit
 
 class SavedArtCollectionViewCell: UICollectionViewCell {
+    
+    static let reuseIdentifier = String(describing: SavedArtCollectionViewCell.self)
   
   //MARK: Properties
   var delegate: SavedArtCellDelegate?

@@ -40,17 +40,4 @@ struct UIUtilities {
         imageView.image = image
         imageView.contentMode = contentMode
     }
-    
-    static func setUpNavigationBar(title: String, viewController: UIViewController, leftBarButton: UIBarButtonItem) {
-        let attrs = [
-                   NSAttributedString.Key.foregroundColor: UIColor.systemBlue,
-                   NSAttributedString.Key.font: UIFont(name: "SnellRoundhand-Bold", size: 30)]
-        viewController.navigationController?.navigationBar.titleTextAttributes = attrs as [NSAttributedString.Key : Any]
-        viewController.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        viewController.navigationController?.navigationBar.shadowImage = UIImage()
-        viewController.navigationController?.navigationBar.isTranslucent = true
-        viewController.navigationController?.view.backgroundColor = .clear
-        viewController.navigationController?.navigationBar.topItem?.title = "\(title)"
-        viewController.navigationItem.leftBarButtonItem = leftBarButton
-    }
 }

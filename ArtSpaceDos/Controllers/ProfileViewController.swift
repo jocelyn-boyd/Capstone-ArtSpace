@@ -170,7 +170,7 @@ class ProfileViewController: UIViewController {
                 
                 if FirebaseAuthService.manager.currentUser != nil {
                     UIView.transition(with: window, duration: 0.3, options: .transitionFlipFromBottom, animations: {
-                        window.rootViewController = MainTabBarController()
+                        window.rootViewController = ASTabBarController()
                     }, completion: nil)
                     
                 } else {

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0882D056256F5B36009A90E7 /* ASImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0882D055256F5B36009A90E7 /* ASImageView.swift */; };
+		0882D059256F5C28009A90E7 /* ASButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0882D058256F5C28009A90E7 /* ASButton.swift */; };
+		08D9BD36256F2435008FCB30 /* ASCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D9BD35256F2435008FCB30 /* ASCollectionView.swift */; };
 		B2AC2E398A17C35CDEB94BF8 /* Pods_ArtSpaceDos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F33B934BE5CD13C6F2233C14 /* Pods_ArtSpaceDos.framework */; };
 		CB00A3C024293E7000F42467 /* StripeKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB00A3BF24293E7000F42467 /* StripeKeys.swift */; };
 		CB0D6FAA23FC55A20082178A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0D6FA923FC55A20082178A /* LoginViewController.swift */; };
@@ -22,7 +25,7 @@
 		D80E04CF23ECAA2200352C3E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E04CE23ECAA2200352C3E /* ProfileViewController.swift */; };
 		D80E04D123ECAA3900352C3E /* PurchaseHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E04D023ECAA3900352C3E /* PurchaseHistoryViewController.swift */; };
 		D80E04D323ECAA4C00352C3E /* SavedArtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E04D223ECAA4C00352C3E /* SavedArtViewController.swift */; };
-		D80E04D523ECAAEC00352C3E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E04D423ECAAEC00352C3E /* MainTabBarController.swift */; };
+		D80E04D523ECAAEC00352C3E /* ASTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E04D423ECAAEC00352C3E /* ASTabBarController.swift */; };
 		D82FA88223E33697005B22D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82FA88123E33697005B22D4 /* AppDelegate.swift */; };
 		D82FA88423E33697005B22D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82FA88323E33697005B22D4 /* SceneDelegate.swift */; };
 		D82FA88923E33697005B22D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82FA88723E33697005B22D4 /* Main.storyboard */; };
@@ -30,7 +33,7 @@
 		D82FA88E23E3369A005B22D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82FA88C23E3369A005B22D4 /* LaunchScreen.storyboard */; };
 		D82FA89923E33BED005B22D4 /* AppUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82FA89823E33BED005B22D4 /* AppUser.swift */; };
 		D82FA89B23E33C12005B22D4 /* ArtObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82FA89A23E33C12005B22D4 /* ArtObject.swift */; };
-		D82FA8A123E33C84005B22D4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82FA8A023E33C84005B22D4 /* MainViewController.swift */; };
+		D82FA8A123E33C84005B22D4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82FA8A023E33C84005B22D4 /* HomeViewController.swift */; };
 		D82FA8A323E33C9E005B22D4 /* ArtDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82FA8A223E33C9E005B22D4 /* ArtDetailViewController.swift */; };
 		D82FA8A523E33CB1005B22D4 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82FA8A423E33CB1005B22D4 /* CreatePostViewController.swift */; };
 		D82FA8A823E33D1F005B22D4 /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82FA8A723E33D1F005B22D4 /* ArtCell.swift */; };
@@ -42,11 +45,13 @@
 		D886C88723FDA15E002FA690 /* SavedArtCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D886C88623FDA15E002FA690 /* SavedArtCollectionViewCell.swift */; };
 		FC1616FD23E8B45D00289C74 /* FirebaseStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1616FC23E8B45D00289C74 /* FirebaseStorageService.swift */; };
 		FC1616FF23ECA03900289C74 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1616FE23ECA03900289C74 /* ARViewController.swift */; };
-		FC16170323FC8C6900289C74 /* ReuseIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC16170223FC8C6900289C74 /* ReuseIdentifiers.swift */; };
 		FC6D4D482416C48B00D5FB66 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6D4D472416C48A00D5FB66 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0882D055256F5B36009A90E7 /* ASImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASImageView.swift; sourceTree = "<group>"; };
+		0882D058256F5C28009A90E7 /* ASButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASButton.swift; sourceTree = "<group>"; };
+		08D9BD35256F2435008FCB30 /* ASCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASCollectionView.swift; sourceTree = "<group>"; };
 		B4EA1061167644802D8225B1 /* Pods-ArtSpaceDos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtSpaceDos.release.xcconfig"; path = "Target Support Files/Pods-ArtSpaceDos/Pods-ArtSpaceDos.release.xcconfig"; sourceTree = "<group>"; };
 		CB00A3BF24293E7000F42467 /* StripeKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripeKeys.swift; sourceTree = "<group>"; };
 		CB0D6FA923FC55A20082178A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +67,7 @@
 		D80E04CE23ECAA2200352C3E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D80E04D023ECAA3900352C3E /* PurchaseHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseHistoryViewController.swift; sourceTree = "<group>"; };
 		D80E04D223ECAA4C00352C3E /* SavedArtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedArtViewController.swift; sourceTree = "<group>"; };
-		D80E04D423ECAAEC00352C3E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		D80E04D423ECAAEC00352C3E /* ASTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASTabBarController.swift; sourceTree = "<group>"; };
 		D82FA87E23E33697005B22D4 /* ArtSpaceDos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtSpaceDos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82FA88123E33697005B22D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D82FA88323E33697005B22D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,7 +77,7 @@
 		D82FA88F23E3369A005B22D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D82FA89823E33BED005B22D4 /* AppUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUser.swift; sourceTree = "<group>"; };
 		D82FA89A23E33C12005B22D4 /* ArtObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtObject.swift; sourceTree = "<group>"; };
-		D82FA8A023E33C84005B22D4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D82FA8A023E33C84005B22D4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D82FA8A223E33C9E005B22D4 /* ArtDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtDetailViewController.swift; sourceTree = "<group>"; };
 		D82FA8A423E33CB1005B22D4 /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
 		D82FA8A723E33D1F005B22D4 /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
@@ -86,7 +91,6 @@
 		F33B934BE5CD13C6F2233C14 /* Pods_ArtSpaceDos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArtSpaceDos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1616FC23E8B45D00289C74 /* FirebaseStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageService.swift; sourceTree = "<group>"; };
 		FC1616FE23ECA03900289C74 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
-		FC16170223FC8C6900289C74 /* ReuseIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifiers.swift; sourceTree = "<group>"; };
 		FC6D4D472416C48A00D5FB66 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +106,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08D9BD33256F225D008FCB30 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D82FA89F23E33C4B005B22D4 /* Cell */,
+				0882D055256F5B36009A90E7 /* ASImageView.swift */,
+				0882D058256F5C28009A90E7 /* ASButton.swift */,
+				08D9BD35256F2435008FCB30 /* ASCollectionView.swift */,
+				CB18ADE52416CCDA00A8745A /* FilterButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		44D3DF494DF310A3FDBD8881 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,12 +178,11 @@
 			isa = PBXGroup;
 			children = (
 				D82FA89723E33BCE005B22D4 /* Models */,
-				D82FA89E23E33C41005B22D4 /* ViewControllers */,
+				08D9BD33256F225D008FCB30 /* Views */,
+				D82FA89E23E33C41005B22D4 /* Controllers */,
 				D82FA8AC23E33E61005B22D4 /* FirebaseHelpers */,
-				D82FA8A623E33CBF005B22D4 /* SupportingFiles */,
 				D82FA8B523E34A4C005B22D4 /* Utilities */,
-				D82FA88123E33697005B22D4 /* AppDelegate.swift */,
-				D82FA88323E33697005B22D4 /* SceneDelegate.swift */,
+				D82FA8A623E33CBF005B22D4 /* SupportingFiles */,
 				D82FA88F23E3369A005B22D4 /* Info.plist */,
 				D854837D23E385D300811E6B /* GoogleService-Info.plist */,
 			);
@@ -183,14 +198,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		D82FA89E23E33C41005B22D4 /* ViewControllers */ = {
+		D82FA89E23E33C41005B22D4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				CB39CA032423D6C500F87E7E /* StripeHelpers */,
 				CB0D6FA823FC558B0082178A /* Authentication */,
-				D82FA89F23E33C4B005B22D4 /* Cell */,
-				D82FA8A023E33C84005B22D4 /* MainViewController.swift */,
-				D80E04D423ECAAEC00352C3E /* MainTabBarController.swift */,
+				D82FA8A023E33C84005B22D4 /* HomeViewController.swift */,
 				D82FA8A223E33C9E005B22D4 /* ArtDetailViewController.swift */,
 				D82FA8A423E33CB1005B22D4 /* CreatePostViewController.swift */,
 				FC1616FE23ECA03900289C74 /* ARViewController.swift */,
@@ -198,8 +211,9 @@
 				D80E04D023ECAA3900352C3E /* PurchaseHistoryViewController.swift */,
 				D80E04D223ECAA4C00352C3E /* SavedArtViewController.swift */,
 				CBA886A323EDF40100E45D49 /* FilterViewController.swift */,
+				D80E04D423ECAAEC00352C3E /* ASTabBarController.swift */,
 			);
-			path = ViewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		D82FA89F23E33C4B005B22D4 /* Cell */ = {
@@ -217,6 +231,8 @@
 				D82FA88A23E3369A005B22D4 /* Assets.xcassets */,
 				D82FA88723E33697005B22D4 /* Main.storyboard */,
 				D82FA88C23E3369A005B22D4 /* LaunchScreen.storyboard */,
+				D82FA88123E33697005B22D4 /* AppDelegate.swift */,
+				D82FA88323E33697005B22D4 /* SceneDelegate.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -247,8 +263,6 @@
 				D82FA8A923E33E2E005B22D4 /* Extensions */,
 				D82FA8B323E346B6005B22D4 /* UIUtilities.swift */,
 				CBBEC33A23F5A13800A83FD7 /* Delegates.swift */,
-				FC16170223FC8C6900289C74 /* ReuseIdentifiers.swift */,
-				CB18ADE52416CCDA00A8745A /* FilterButton.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -371,6 +385,7 @@
 			files = (
 				CB0D6FAE23FC55EA0082178A /* GifExtension.swift in Sources */,
 				CB0D6FAA23FC55A20082178A /* LoginViewController.swift in Sources */,
+				0882D056256F5B36009A90E7 /* ASImageView.swift in Sources */,
 				D82FA8A523E33CB1005B22D4 /* CreatePostViewController.swift in Sources */,
 				D82FA8A323E33C9E005B22D4 /* ArtDetailViewController.swift in Sources */,
 				D82FA8B223E33ED3005B22D4 /* FirestoreService.swift in Sources */,
@@ -378,9 +393,10 @@
 				FC1616FD23E8B45D00289C74 /* FirebaseStorageService.swift in Sources */,
 				D82FA89923E33BED005B22D4 /* AppUser.swift in Sources */,
 				D80E04D323ECAA4C00352C3E /* SavedArtViewController.swift in Sources */,
-				D82FA8A123E33C84005B22D4 /* MainViewController.swift in Sources */,
+				D82FA8A123E33C84005B22D4 /* HomeViewController.swift in Sources */,
 				FC1616FF23ECA03900289C74 /* ARViewController.swift in Sources */,
 				D82FA89B23E33C12005B22D4 /* ArtObject.swift in Sources */,
+				08D9BD36256F2435008FCB30 /* ASCollectionView.swift in Sources */,
 				D82FA88223E33697005B22D4 /* AppDelegate.swift in Sources */,
 				D80E04CF23ECAA2200352C3E /* ProfileViewController.swift in Sources */,
 				CB39CA0D2423F95B00F87E7E /* StripeAPIClient.swift in Sources */,
@@ -388,11 +404,11 @@
 				CBA886A423EDF40100E45D49 /* FilterViewController.swift in Sources */,
 				D886C88723FDA15E002FA690 /* SavedArtCollectionViewCell.swift in Sources */,
 				D82FA88423E33697005B22D4 /* SceneDelegate.swift in Sources */,
+				0882D059256F5C28009A90E7 /* ASButton.swift in Sources */,
 				CB18ADE62416CCDA00A8745A /* FilterButton.swift in Sources */,
 				D82FA8A823E33D1F005B22D4 /* ArtCell.swift in Sources */,
 				D82FA8B423E346B6005B22D4 /* UIUtilities.swift in Sources */,
 				CBBEC33B23F5A13800A83FD7 /* Delegates.swift in Sources */,
-				FC16170323FC8C6900289C74 /* ReuseIdentifiers.swift in Sources */,
 				CB39CA072423D85A00F87E7E /* SaveCardViewController.swift in Sources */,
 				FC6D4D482416C48B00D5FB66 /* UIViewControllerExtension.swift in Sources */,
 				D80E04D123ECAA3900352C3E /* PurchaseHistoryViewController.swift in Sources */,
@@ -400,7 +416,7 @@
 				D82FA8AB23E33E49005B22D4 /* String+Validations.swift in Sources */,
 				CB39CA0F24241C8300F87E7E /* PaymentOptionsViewController.swift in Sources */,
 				CB00A3C024293E7000F42467 /* StripeKeys.swift in Sources */,
-				D80E04D523ECAAEC00352C3E /* MainTabBarController.swift in Sources */,
+				D80E04D523ECAAEC00352C3E /* ASTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
