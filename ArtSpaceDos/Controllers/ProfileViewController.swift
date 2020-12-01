@@ -29,6 +29,13 @@ class ProfileViewController: UIViewController {
         }
     }
 
+    lazy var tableView: UITableView = {
+          let table = UITableView(frame: .zero, style: .plain)
+          table.register(UserProfileCell.self, forCellReuseIdentifier: "profileCell")
+           table.backgroundColor = .white
+           return table
+       }()
+
     
     //MARK: UI OBJC
     lazy var userNameLabel: UILabel = {
@@ -61,13 +68,13 @@ class ProfileViewController: UIViewController {
     
     
     
-    lazy var editDisplayNameButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Edit Username", for: .normal)
-        button.setTitleColor(.systemBlue, for: .normal)
-        button.addTarget(self, action: #selector(editDisplayNamePressed), for: .touchUpInside)
-        return button
-    }()
+//    lazy var editDisplayNameButton: UIButton = {
+//        let button = UIButton()
+//        button.setTitle("Edit Username", for: .normal)
+//        button.setTitleColor(.systemBlue, for: .normal)
+//        button.addTarget(self, action: #selector(editDisplayNamePressed), for: .touchUpInside)
+//        return button
+//    }()
     lazy var textField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "Enter User Name"
@@ -108,18 +115,7 @@ class ProfileViewController: UIViewController {
         return button
     }()
     
-    
-    lazy var savePaymentInformation: UIButton = {
-        let button = UIButton()
-        button.setTitleColor(.systemBlue, for: .normal)
-        UIUtilities.setUpButton(button, title: "Save Card", backgroundColor: .white, target: self, action: #selector(stripeSaveCard))
-        button.layer.borderWidth = 2.0
-               button.layer.cornerRadius = 15
-               button.layer.borderColor = UIColor.systemBlue.cgColor
-        button.isHidden = true
-        return button
-    }()
-    
+  
     
     //MARK: addSubviews
     func addSubviews() {
@@ -129,19 +125,21 @@ class ProfileViewController: UIViewController {
         view.addSubview(saveButton)
         view.addSubview(userNameLabel)
         view.addSubview(textField)
-        view.addSubview(editDisplayNameButton)
-        view.addSubview(savePaymentInformation)
+      //  view.addSubview(editDisplayNameButton)
+     
     }
     //MARK:ViewDidLoad cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         addSubviews()
+        tableViewConstraints()
         constrainProfilePicture()
         saveChangesConstraints()
         constrainDisplayname()
-        editUserNameConstraints()
+      //  editUserNameConstraints()
         uploadImageConstraints()
-        saveCardConstraints()
         if let displayName = FirebaseAuthService.manager.currentUser?.displayName {
             loadImage()
             userNameLabel.text = displayName
@@ -381,38 +379,41 @@ class ProfileViewController: UIViewController {
     private func uploadImageConstraints() {
         uploadImageButton.snp.makeConstraints { (make) in
             make.top.equalTo(self.profileImage).offset(125)
-            make.trailing.equalTo(self.editDisplayNameButton).offset(15)
+            make.trailing.equalTo(self.saveButton).offset(15)
             
         }
     }
     
     private func saveChangesConstraints() {
         saveButton.snp.makeConstraints { make in
-            make.bottom.equalTo(editDisplayNameButton).offset(50)
+            make.bottom.equalTo(uploadImageButton).offset(50)
             make.centerX.equalTo(view.safeAreaLayoutGuide)
             make.width.equalTo(120)
         }
     }
+
+//
+//     private func editUserNameConstraints() {
+//         editDisplayNameButton.snp.makeConstraints { (make) in
+//             make.bottom.equalTo(profileImage).offset(75)
+//             make.left.equalTo(profileImage).offset(10)
+//         }
+//     }
     
+
     
-    private func editUserNameConstraints() {
-        editDisplayNameButton.snp.makeConstraints { (make) in
-            make.centerY.equalTo(self.profileImage).offset(100)
-            make.centerX.equalTo(self.view)
-        }
-    }
- 
-    
-    private func saveCardConstraints() {
-        savePaymentInformation.snp.makeConstraints{ make in
-            make.bottom.equalTo(saveButton).offset(50)
-            make.centerX.equalTo(saveButton)
-            make.width.equalTo(saveButton)
-            make.height.equalTo(saveButton)
-            
-        }
-    }
-    
+    private func tableViewConstraints() {
+      view.addSubview(tableView)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: saveButton.bottomAnchor,constant: 50),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        
+        
+        ])
+       }
 }
 
 //MARK: Extension
