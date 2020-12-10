@@ -42,7 +42,7 @@ class ProfileViewController: UIViewController {
         let label = UILabel()
         label.textAlignment = .center
         label.text = "Welcome"
-        label.textColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+        label.textColor = .black
         return label
     }()
     
@@ -136,7 +136,7 @@ class ProfileViewController: UIViewController {
         addSubviews()
         tableViewConstraints()
         constrainProfilePicture()
-        saveChangesConstraints()
+       // saveChangesConstraints()
         constrainDisplayname()
       //  editUserNameConstraints()
         uploadImageConstraints()
@@ -250,12 +250,12 @@ class ProfileViewController: UIViewController {
         present(alertVC, animated: true, completion: nil)
     }
     
-    @objc private func stripeSaveCard() {
-        let saveCardVC = SaveCardViewController()
-        saveCardVC.modalPresentationStyle = .overCurrentContext
-        present(saveCardVC, animated: true, completion: nil)
-        
-    }
+//    @objc private func stripeSaveCard() {
+//        let saveCardVC = SaveCardViewController()
+//        saveCardVC.modalPresentationStyle = .overCurrentContext
+//        present(saveCardVC, animated: true, completion: nil)
+//
+//    }
     @objc private func profileImageTapped(){
         print("Pressed")
         
@@ -379,7 +379,7 @@ class ProfileViewController: UIViewController {
     private func uploadImageConstraints() {
         uploadImageButton.snp.makeConstraints { (make) in
             make.top.equalTo(self.profileImage).offset(125)
-            make.trailing.equalTo(self.saveButton).offset(15)
+            make.trailing.equalTo(self.profileImage).offset(15)
             
         }
     }
@@ -406,7 +406,7 @@ class ProfileViewController: UIViewController {
       view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: saveButton.bottomAnchor,constant: 50),
+            tableView.topAnchor.constraint(equalTo: profileImage.bottomAnchor,constant: 50),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)

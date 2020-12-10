@@ -44,9 +44,7 @@ class FirestoreService {
         }
     }
     
-    
-    
-    func updateCurrentUser(userName: String? = nil, photoURL: URL? = nil, completion: @escaping (Result<(), Error>) -> ()) {
+func updateCurrentUser(userName: String? = nil, photoURL: URL? = nil, completion: @escaping (Result<(), Error>) -> ()) {
         guard let userID = FirebaseAuthService.manager.currentUser?.uid else {return}
         
         var updateFields = [String:Any]()
@@ -65,7 +63,7 @@ class FirestoreService {
          
     }
     
-    func getCurrentAppUser(uid: String, completion: @escaping (Result<AppUser, Error>) -> ()) {
+func getCurrentAppUser(uid: String, completion: @escaping (Result<AppUser, Error>) -> ()) {
  database.collection(FirestoreCollections.AppUser.rawValue).document(uid).getDocument { (snapshot, error) in
             if let error = error {
                 completion(.failure(error))
@@ -91,11 +89,8 @@ class FirestoreService {
                     completion(.success(users ?? []))
                 }
             }
-        
-        
     }
     
-   
 //    MARK: - ArtObject Methods
     
     func createArtObject(artObject: ArtObject, completion: @ escaping (Result<(), Error>) -> ()) {
@@ -188,7 +183,6 @@ class FirestoreService {
 //    MARK: - TODO: Update to check only for current user.
     
     func removeSavedArtObject(artID: String, completion: @escaping (Result <(), Error>) -> ()) {
-        
         database.collection(FirestoreCollections.FavoriteArt.rawValue).whereField("artID", isEqualTo: artID).getDocuments { (snapshot, error) in
             if let error = error {
                 print("Error getting documents: \(error)")
@@ -200,5 +194,4 @@ class FirestoreService {
             }
         }
     }
-    
 }

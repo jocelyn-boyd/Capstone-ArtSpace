@@ -15,8 +15,7 @@ enum pictureUploadType: String {
 }
 
 class FirebaseStorageService {
-    //enum to save profile picture to Firebase without adding profile pictures to the artpieces folder. 
-    
+
     static let manager = FirebaseStorageService()
     
     private let storage: Storage!

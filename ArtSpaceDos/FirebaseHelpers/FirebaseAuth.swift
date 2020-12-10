@@ -19,7 +19,7 @@ class FirebaseAuthService {
         return auth.currentUser
     }
     
-    func createNewUser(email: String, password: String, completion: @escaping (Result<User, Error>) -> ()) {
+func createNewUser(email: String, password: String, completion: @escaping (Result<User, Error>) -> ()) {
         auth.createUser(withEmail: email, password: password) { (result, error) in
             if let createdUser = result?.user {
                 completion(.success(createdUser))
@@ -31,15 +31,13 @@ class FirebaseAuthService {
         }
     }
     
-
-    func updateUserFields(userName: String? = nil,photoURL: URL? = nil, completion: @escaping (Result<(),Error>) -> ()){
+ func updateUserFields(userName: String? = nil,photoURL: URL? = nil, completion: @escaping (Result<(),Error>) -> ()){
         let changeRequest = auth.currentUser?.createProfileChangeRequest()
         if let userName = userName {
             changeRequest?.displayName = userName
         }
         if let photoURL = photoURL {
             changeRequest?.photoURL = photoURL
-
         }
         changeRequest?.commitChanges(completion: { (error) in
             if let error = error {
@@ -49,13 +47,8 @@ class FirebaseAuthService {
             }
         })
     }
-    
-    
 
-    
-
-
-    func loginUser(email: String, password: String, completion: @escaping(Result<(), Error>) -> ()) {
+func loginUser(email: String, password: String, completion: @escaping(Result<(), Error>) -> ()) {
         auth.signIn(withEmail: email, password: password) { (result, error) in
             
             if result?.user != nil {
@@ -73,11 +66,6 @@ class FirebaseAuthService {
         } catch {
             print(error)
         }
-        
     }
-    
     private init() {}
-    
-    
-    
 }
